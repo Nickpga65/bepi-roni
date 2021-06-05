@@ -1,0 +1,48 @@
+This README is dedicated to explaining how I will generate the code for the 65C02 computer using the cc65 compiler/assembler/linker.
+
+The first step is to follow the cc65 repo README to enable it on your machine. The second step is make your custom 'configuration' file.
+
+The configuration file is a memory mapping file for the cc65 compiler. It also specifies the binary output files I will be using to program the ROM for my computer. Additionally, I will also have it output another binary file that can be uploaded to the computer's RAM and then exectuted.
+
+
+
+SRC
+
+	ROM source code
+
+	'run-time' source code
+
+INC
+
+	Types of include files: reference, library and macro
+
+		reference
+			defines constants such as port addresses
+			RAM labels
+
+		library
+			source code that provides services to the other programs
+			for example, a math library or a driver for a real-time clock module
+
+		macro
+			used to improve quality-of-life
+
+Notation
+
+	labels
+		subroutines
+			lower-case
+			cheap descriptive labels
+
+		macros
+			lower-case
+			capitlize first letter of each word
+
+		constants
+			upper-case
+
+		memory
+			lower-case
+
+	numbers
+		minimun amount of characters, i.e., #0 and not #$00
