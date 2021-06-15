@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name bepi-roni)(type Legacy)(uri ${KIPRJMOD}/bepi-roni.lib)(options "")(descr ""))
+  (lib (name bepi-roni-rescue)(type Legacy)(uri ${KIPRJMOD}/bepi-roni-rescue.lib)(options "")(descr ""))
+)
